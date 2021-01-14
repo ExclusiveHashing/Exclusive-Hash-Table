@@ -9,7 +9,7 @@
 #include <map>
 #include <set>
 #include "BOBHash32.h"
-#include "shared_index.h"
+#include "exclusive_hashing.h"
 #include <algorithm>
 #include <string>
 #include <time.h>
@@ -323,7 +323,6 @@ int main(int argc, char **argv)
 	for (int kk = 0; kk < level_size; kk++)
 	{
 		counter[kk].initial(13, d, int(first_level_size * pow(rate, level_size - 1 - kk) / d), kk, 750);
-		//cout<<int(first_level_size*pow(rate,level_size-1-kk)/d)<<endl;
 		totalnum += first_level_size * int(pow(rate, level_size - 1 - kk));
 	}
 

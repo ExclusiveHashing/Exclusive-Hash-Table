@@ -194,15 +194,6 @@ public:
 		}
 		int kkkk = 0;
 
-		/*uint32_t tttt=murmur3_32((const char*)key, key_len)%3;
-           BOBHash32* hashplus = NULL;
-           hashplus = new BOBHash32(tttt);
-           kkkk=(hashplus->run((const char*)c, key_len));
-
-           kkkk=abs(kkkk)%((int(m/rate)- 1)*d);
-           if(kkkk==1)
-           	kkkk=2;
-           return kkkk;*/
 		if (id == level_size - 1)
 		{
 			return -1;
